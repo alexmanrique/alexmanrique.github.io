@@ -1,10 +1,10 @@
 # alexmanrique.github.io
 
-This the repository with source code of my personal website
+This is the repository with the minified, uglyfied, optimized build files of my personal website.
 
-See it live in www.alexmanrique.com 
+I forked https://github.com/gamell/gamell.io into https://github.com/alexmanrique/gamell.io and I adapted it to my resume and skills
 
-I forked https://github.com/gamell/gamell.io and I adapted it to my resume and skills
+See it live in http://www.alexmanrique.com 
 
 
 
