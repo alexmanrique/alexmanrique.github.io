@@ -1,0 +1,507 @@
+/*
+* Custom Styles for Alex Manrique Landing Page
+* Inspired by modern indie hacker profiles
+*/
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Profile Section */
+.profile-section {
+  position: sticky;
+  top: 40px;
+  max-width: 400px;
+}
+
+.profile-picture-wrapper {
+  margin-bottom: 24px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.profile-info {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-item svg {
+  color: #666;
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 24px 0;
+}
+
+.newsletter-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #333;
+}
+
+.newsletter-text strong {
+  color: #1a1a1a;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  filter: brightness(0);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.social-icon:hover img {
+  opacity: 1;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  align-items: stretch !important;
+}
+
+#mc_embed_signup_scroll {
+  display: flex !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: transparent !important;
+  align-items: stretch !important;
+  flex-shrink: 0 !important;
+  flex-wrap: nowrap !important;
+  margin-bottom: 0 !important;
+}
+
+#mc_embed_signup_scroll::after {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  flex-basis: 100% !important;
+  order: 998 !important;
+}
+
+#trust,
+#trust-old {
+  margin-top: 12px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+  color: #666 !important;
+  line-height: 1.5 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  flex: 0 0 100% !important;
+  flex-basis: 100% !important;
+  flex-shrink: 0 !important;
+  clear: both !important;
+  float: none !important;
+  position: relative !important;
+  order: 999 !important;
+  box-sizing: border-box !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.newsletter-input,
+#mc_embed_signup_scroll .newsletter-input,
+#mc_embed_signup_scroll input[type="email"] {
+  flex: 1 !important;
+  padding: 14px 16px !important;
+  border: none !important;
+  border-right: 1px solid #e0e0e0 !important;
+  border-radius: 8px 0 0 8px !important;
+  font-size: 16px !important;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif !important;
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+  box-sizing: border-box !important;
+  height: 48px !important;
+  line-height: 1.5 !important;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.newsletter-input::placeholder {
+  color: #a3a3a3;
+}
+
+.newsletter-button,
+input[type="submit"].newsletter-button,
+#mc_embed_signup_scroll .newsletter-button,
+#mc_embed_signup_scroll input[type="submit"],
+#mc-embedded-subscribe,
+.newsletter-form .newsletter-button,
+.newsletter-form input[type="submit"] {
+  padding: 14px 28px !important;
+  background-color: #ff6b35 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+  min-width: 130px !important;
+  height: 48px !important;
+  line-height: 1.2 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  box-shadow: 0 2px 6px rgba(255, 107, 53, 0.25) !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.newsletter-button:hover,
+input[type="submit"].newsletter-button:hover,
+#mc_embed_signup_scroll .newsletter-button:hover,
+#mc_embed_signup_scroll input[type="submit"]:hover,
+#mc-embedded-subscribe:hover,
+.newsletter-form .newsletter-button:hover,
+.newsletter-form input[type="submit"]:hover {
+  background-color: #e55a2b !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3) !important;
+}
+
+.newsletter-button:active,
+input[type="submit"].newsletter-button:active,
+#mc_embed_signup_scroll .newsletter-button:active,
+#mc_embed_signup_scroll input[type="submit"]:active,
+#mc-embedded-subscribe:active,
+.newsletter-form .newsletter-button:active,
+.newsletter-form input[type="submit"]:active {
+  background-color: #d44f20 !important;
+  transform: translateY(0) !important;
+}
+
+/* Old Newsletter Form (Version A - Control) */
+.newsletter-form-old {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.newsletter-form-old .newsletter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #fff;
+  color: #1a1a1a;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.newsletter-form-old .newsletter-input:focus {
+  outline: none;
+  border-color: #0085ff;
+  box-shadow: 0 0 0 3px rgba(0, 133, 255, 0.1);
+}
+
+.newsletter-form-old .newsletter-input::placeholder {
+  color: #999;
+}
+
+.newsletter-form-old .newsletter-button,
+.newsletter-form-old input[type="submit"].newsletter-button {
+  padding: 12px 24px;
+  background-color: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(255, 107, 53, 0.2);
+}
+
+.newsletter-form-old .newsletter-button:hover,
+.newsletter-form-old input[type="submit"].newsletter-button:hover {
+  background-color: #e55a2b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+}
+
+.newsletter-form-old .newsletter-button:active,
+.newsletter-form-old input[type="submit"].newsletter-button:active {
+  transform: translateY(0);
+}
+
+/* Hide forms by default until PostHog loads */
+.newsletter-form-container {
+  display: none;
+  width: 100% !important;
+}
+
+.newsletter-form-container.show {
+  display: block !important;
+  width: 100% !important;
+  flex-direction: column !important;
+}
+
+.newsletter-form-container.show > form {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 0 !important;
+}
+
+.newsletter-form-container.show > #trust,
+.newsletter-form-container.show > #trust-old {
+  display: block !important;
+  width: 100% !important;
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  clear: both !important;
+  float: none !important;
+}
+
+/* Projects Section */
+.projects-section {
+  width: 100%;
+}
+
+.projects-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 32px 0;
+  color: #1a1a1a;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.project-icon {
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.project-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.project-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  color: #0085ff;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .profile-section {
+    position: static;
+    max-width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .projects-title {
+    font-size: 24px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .newsletter-button,
+  #mc_embed_signup_scroll .newsletter-button,
+  #mc_embed_signup_scroll input[type="submit"],
+  #mc-embedded-subscribe {
+    width: 100% !important;
+    border-radius: 0 0 8px 8px !important;
+  }
+}

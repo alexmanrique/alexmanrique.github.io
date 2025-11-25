@@ -1,141 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <!-- Page Information
+  <head>
+    <!-- Page Information
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Alex Manrique</title>
-  <meta name="description" content="Find us online!">
-  <meta name="author" content="Seth Cottle">
+    <meta charset="utf-8" />
+    <title>Alex Manrique</title>
+    <meta
+      name="description"
+      content="Lead engineer fascinated by software development and ideas that change the world"
+    />
+    <meta name="author" content="Alex Manrique" />
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton-dark.css">
-  <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/brands.css" />
 
-  <!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/avatar.png">
-
-</head>
+    <link rel="icon" type="image/png" href="images/avatar.png" />
+  </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-79GL8C39KM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-79GL8C39KM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-79GL8C39KM');
-</script>
-
-<body>
-
-  <!-- Primary Page Layout
+    gtag("config", "G-79GL8C39KM");
+  </script>
+  <body>
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
+    <div class="main-container">
+      <div class="profile-section">
+        <!-- Profile Picture -->
+        <div class="profile-picture-wrapper">
+          <img
+            src="images/avatar.png"
+            srcset="images/avatar@2x.png 2x"
+            alt="Alex Manrique"
+            class="profile-picture"
+          />
+        </div>
 
-        <!-- 
-
-          ## Getting Started with LittleLink
-
-          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
-
-          You can add your own brand or others brands you may need in the `css/brands.css` file. 
-
-          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
-
-          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
-
-          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
-
-          Edit the "Short Bio" section tell users about yourself or your brand.
-
-        -->
-
-        <!-- Your Image Here -->
-        <img src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="LittleLink Logo" style="border-radius: 50%;">
-
-        <!-- Title -->
+        <!-- Name -->
         <h1>Alex Manrique</h1>
 
-        <!-- Short Bio -->
-        <p>Lead engineer fascinated by software development and ideas that change the world. Here you can find all my social networks. Let's connect! 😊</p>
+        <!-- Location & Info -->
+        <div class="profile-info">
+          <span class="info-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Spain
+          </span>
+        </div>
 
-        <!--
+        <!-- Bio -->
+        <p class="bio">
+          Lead engineer fascinated by software development and ideas that change
+          the world. Here you can find all my social networks. Let's connect! 😊
+        </p>
 
-          ## Breaking down <a> attributes:
-          
-          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
-          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
-          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
+        <!-- Newsletter/Content -->
+        <div class="newsletter-section">
+          <p class="newsletter-text">
+            <strong>Follow my journey:</strong> I share insights about software
+            development, startup ideas, and building products that matter.
+          </p>
+        </div>
 
-          2.) Replace the # in href="#" with the desired target URL for the button.
+        <!-- Social Links -->
+        <div class="social-links">
+          <a
+            href="https://github.com/alexmanrique"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            title="GitHub"
+          >
+            <img src="images/icons/github.svg" alt="GitHub" />
+          </a>
+          <a
+            href="https://twitter.com/amanrique"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            title="Twitter"
+          >
+            <img src="images/icons/twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/amanrique/"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            title="LinkedIn"
+          >
+            <img src="images/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://instagram.com/alesman8"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            title="Instagram"
+          >
+            <img src="images/icons/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
 
-          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
+        <!-- Newsletter Subscription -->
+        <!-- Version A (Control - Old Design) -->
+        <div id="newsletter-form-old" class="newsletter-form-container">
+          <form
+            action="https://alexmanrique.us17.list-manage.com/subscribe/post?u=01dc101c3bd1d708e13e72e12&amp;id=4079f165ee"
+            method="post"
+            id="mc-embedded-subscribe-form-old"
+            name="mc-embedded-subscribe-form-old"
+            class="newsletter-form-old validate"
+            target="_blank"
+            novalidate
+          >
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input
+                type="text"
+                name="b_01dc101c3bd1d708e13e72e12_4079f165ee"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="newsletter-input email"
+              id="mce-EMAIL-old"
+              placeholder="Your email..."
+              required
+              aria-label="Email address for newsletter subscription"
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe-old"
+              class="newsletter-button"
+            />
+            <div id="trust-old">
+              I won't give your address to anyone else, won't send you any spam,
+              and you can unsubscribe at any time.
+            </div>
+          </form>
+        </div>
 
-          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
-          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
+        <!-- Version B (Test - New Design) -->
+        <div id="newsletter-form-new" class="newsletter-form-container">
+          <form
+            action="https://alexmanrique.us17.list-manage.com/subscribe/post?u=01dc101c3bd1d708e13e72e12&amp;id=4079f165ee"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="newsletter-form validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_01dc101c3bd1d708e13e72e12_4079f165ee"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="newsletter-input email"
+                id="mce-EMAIL"
+                placeholder="Your email..."
+                required
+                aria-label="Email address for newsletter subscription"
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="newsletter-button"
+              />
+            </div>
+          </form>
+          <div id="trust">
+            I won't give your address to anyone else, won't send you any spam,
+            and you can unsubscribe at any time.
+          </div>
+        </div>
+      </div>
 
-          ## Breaking down the <img> attributes:
-          
-          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
+      <div class="projects-section">
+        <h2 class="projects-title">Projects & Work</h2>
 
-          2.) src="icons/[icon_name].svg" | This defines the icon you would like to display from the icons/ folder. For example, you can change this to src="icons/discord.svg" to use the Discord icon.
-          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">📱</div>
+              <div class="project-info">
+                <h3 class="project-name">Simulador Hipoteca</h3>
+                <p class="project-description">
+                  Android App · Mortgage simulator
+                </p>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.manriqueapps.simuladorhipoteca&hl=es&gl=US"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                >View on Play Store →</a
+              >
+            </div>
+          </div>
 
-          3.) alt="Example Logo" | This alt attribute helps provides alternate text for an image, this can assist users who use screen readers. 
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">✍️</div>
+              <div class="project-info">
+                <h3 class="project-name">Personal Blog</h3>
+                <p class="project-description">
+                  Thoughts on software development and tech
+                </p>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="https://alexmanrique.com/blog"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                >Read articles →</a
+              >
+            </div>
+          </div>
 
-        -->
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">💼</div>
+              <div class="project-info">
+                <h3 class="project-name">Coaching</h3>
+                <p class="project-description">
+                  1-on-1 coaching for developers and entrepreneurs
+                </p>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="mailto:amanrique86+coaching@gmail.com"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                >Contact me →</a
+              >
+            </div>
+          </div>
 
-        <!-- Github -->
-        <a class="button button-github" href="https://github.com/alexmanrique" target="_blank" rel="noopener"><img class="icon" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
-          <br>
-        
-        <!-- Twitter -->
-        <a class="button button-twit" href="https://twitter.com/amanrique" target="_blank" rel="noopener"><img class="icon" src="images/icons/twitter.svg" alt="Twitter Logo">Twitter</a>
-          <br>
-
-        <!-- Instagram -->
-        <a class="button button-instagram" href="https://instagram.com/alesman8" target="_blank" rel="noopener"><img class="icon" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-          <br>
-
-        <!-- LinkedIn -->
-        <a class="button button-linked" href="https://www.linkedin.com/in/amanrique/" target="_blank" rel="noopener"><img class="icon" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
-          <br>        
-
-        <!-- Medium --> 
-        <a class="button button-medium" href="https://alexmanrique.com/blog" target="_blank" rel="noopener"><img class="icon" src="images/icons/medium.svg" alt="Medium Logo">Personal blog</a>
-          <br> 
-        
-        <!-- Coaching --> 
-        <a class="button button-default" href="mailto:amanrique86+coaching@gmail.com" target="_blank" rel="noopener"><img class="icon" src="images/icons/email.svg" alt="Coaching">Coaching</a>
-          <br>  
-
-         <!-- Apps --> 
-         <a class="button button-medium" href="https://play.google.com/store/apps/details?id=com.manriqueapps.simuladorhipoteca&hl=es&gl=US" target="_blank" rel="noopener"><img class="icon" src="images/icons/producthunt.svg" alt="Android">Android app</a>
-         <br>  
-          
-        <br>
-        <br>
-        <p>Code to build this page <a href="https://github.com/alexmanrique/littlelink" target="_blank" rel="noopener">here</a>.</p>
-          
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">💻</div>
+              <div class="project-info">
+                <h3 class="project-name">Open Source</h3>
+                <p class="project-description">
+                  Contributions and projects on GitHub
+                </p>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="https://github.com/alexmanrique"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                >View GitHub →</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-<!-- End Document
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <script>
+      // A/B Test Configuration
+      const VARIANT_CONTROL = "control"; // Old design
+      const VARIANT_TEST = "test"; // New design
+      const STORAGE_KEY = "newsletter_form_variant"; // localStorage key
+
+      // Track page load time and time on landing page
+      const pageLoadTime = Date.now();
+      let currentVariant = null;
+      let timeOnPageTracked = false;
+
+      // Get or assign variant (50/50 split, persistent per user)
+      function getVariant() {
+        // Check if user already has a variant assigned
+        let variant = localStorage.getItem(STORAGE_KEY);
+
+        if (!variant) {
+          // Randomly assign variant (50/50 split)
+          variant = Math.random() < 0.5 ? VARIANT_CONTROL : VARIANT_TEST;
+          localStorage.setItem(STORAGE_KEY, variant);
+        }
+
+        return variant;
+      }
+
+      // Track events with Google Analytics
+      function trackEvent(eventName, eventParams) {
+        if (typeof gtag !== "undefined") {
+          gtag("event", eventName, eventParams);
+        }
+      }
+
+      // Track time on landing page
+      function trackTimeOnPage(variant, eventType = "page_exit") {
+        if (timeOnPageTracked) return; // Only track once per session
+
+        const timeOnPage = Math.round((Date.now() - pageLoadTime) / 1000);
+        trackEvent("landing_page_time", {
+          variant: variant,
+          time_on_page_seconds: timeOnPage,
+          event_type: eventType, // "page_exit", "tab_switch", "form_submit"
+        });
+        timeOnPageTracked = true;
+      }
+
+      // Track time on page when user leaves
+      window.addEventListener("beforeunload", function () {
+        if (currentVariant) {
+          trackTimeOnPage(currentVariant, "page_exit");
+        }
+      });
+
+      // Track time when user switches tabs (page becomes hidden)
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden && currentVariant) {
+          trackTimeOnPage(currentVariant, "tab_switch");
+        }
+      });
+
+      // Track periodic time milestones
+      function startTimeTracking(variant) {
+        currentVariant = variant;
+
+        // Track at 10, 30, 60 seconds milestones
+        const milestones = [10, 30, 60];
+        milestones.forEach((seconds) => {
+          setTimeout(() => {
+            if (currentVariant === variant) {
+              trackEvent("landing_page_milestone", {
+                variant: variant,
+                milestone_seconds: seconds,
+                time_on_page_seconds: Math.round(
+                  (Date.now() - pageLoadTime) / 1000
+                ),
+              });
+            }
+          }, seconds * 1000);
+        });
+      }
+
+      // Function to show the appropriate form version
+      function showFormVariant(variant) {
+        const oldForm = document.getElementById("newsletter-form-old");
+        const newForm = document.getElementById("newsletter-form-new");
+
+        if (variant === VARIANT_CONTROL) {
+          // Show old form (control)
+          oldForm.classList.add("show");
+          newForm.classList.remove("show");
+        } else {
+          // Show new form (test) - default
+          newForm.classList.add("show");
+          oldForm.classList.remove("show");
+        }
+
+        // Track which variant was shown
+        trackEvent("newsletter_form_variant_shown", {
+          variant: variant,
+        });
+
+        // Start time tracking for this variant
+        startTimeTracking(variant);
+      }
+
+      // Initialize A/B test
+      function initABTest() {
+        const variant = getVariant();
+        showFormVariant(variant);
+      }
+
+      // Track button clicks (engagement metric)
+      function trackButtonClick(variant) {
+        trackEvent("newsletter_button_clicked", {
+          variant: variant,
+        });
+      }
+
+      // Track input focus (engagement metric)
+      function trackInputFocus(variant) {
+        trackEvent("newsletter_input_focused", {
+          variant: variant,
+        });
+      }
+
+      // Track time to conversion (if user converts)
+      const formViewTimes = {
+        control: null,
+        test: null,
+      };
+      function trackFormView(variant) {
+        const timestamp = Date.now();
+        formViewTimes[variant] = timestamp;
+        trackEvent("newsletter_form_viewed", {
+          variant: variant,
+          timestamp: timestamp,
+        });
+      }
+
+      // Add event listeners for form submissions
+      document.addEventListener("DOMContentLoaded", function () {
+        // Old form tracking
+        const oldForm = document.getElementById(
+          "mc-embedded-subscribe-form-old"
+        );
+        if (oldForm) {
+          // Track form view
+          const oldFormContainer = document.getElementById(
+            "newsletter-form-old"
+          );
+          if (oldFormContainer) {
+            const observer = new MutationObserver(function (mutations) {
+              if (oldFormContainer.classList.contains("show")) {
+                trackFormView(VARIANT_CONTROL);
+                observer.disconnect();
+              }
+            });
+            observer.observe(oldFormContainer, {
+              attributes: true,
+              attributeFilter: ["class"],
+            });
+          }
+
+          // Track input focus
+          const oldInput = document.getElementById("mce-EMAIL-old");
+          if (oldInput) {
+            oldInput.addEventListener("focus", function () {
+              trackInputFocus(VARIANT_CONTROL);
+            });
+          }
+
+          // Track button click
+          const oldButton = document.getElementById(
+            "mc-embedded-subscribe-old"
+          );
+          if (oldButton) {
+            oldButton.addEventListener("click", function () {
+              trackButtonClick(VARIANT_CONTROL);
+            });
+          }
+
+          // Track form submission
+          oldForm.addEventListener("submit", function () {
+            const timeToConvert = formViewTimes[VARIANT_CONTROL]
+              ? Math.round((Date.now() - formViewTimes[VARIANT_CONTROL]) / 1000)
+              : null;
+            const totalTimeOnPage = Math.round(
+              (Date.now() - pageLoadTime) / 1000
+            );
+
+            trackEvent("newsletter_form_submitted", {
+              form_id: "old",
+              variant: VARIANT_CONTROL,
+              conversion: true,
+              time_to_convert_seconds: timeToConvert,
+              total_time_on_page_seconds: totalTimeOnPage,
+            });
+
+            // Also track time on page when they convert
+            trackTimeOnPage(VARIANT_CONTROL, "form_submit");
+          });
+        }
+
+        // New form tracking
+        const newForm = document.getElementById("mc-embedded-subscribe-form");
+        if (newForm) {
+          // Track form view
+          const newFormContainer = document.getElementById(
+            "newsletter-form-new"
+          );
+          if (newFormContainer) {
+            const observer = new MutationObserver(function (mutations) {
+              if (newFormContainer.classList.contains("show")) {
+                trackFormView(VARIANT_TEST);
+                observer.disconnect();
+              }
+            });
+            observer.observe(newFormContainer, {
+              attributes: true,
+              attributeFilter: ["class"],
+            });
+          }
+
+          // Track input focus
+          const newInput = document.getElementById("mce-EMAIL");
+          if (newInput) {
+            newInput.addEventListener("focus", function () {
+              trackInputFocus(VARIANT_TEST);
+            });
+          }
+
+          // Track button click
+          const newButton = document.getElementById("mc-embedded-subscribe");
+          if (newButton) {
+            newButton.addEventListener("click", function () {
+              trackButtonClick(VARIANT_TEST);
+            });
+          }
+
+          // Track form submission
+          newForm.addEventListener("submit", function () {
+            const timeToConvert = formViewTimes[VARIANT_TEST]
+              ? Math.round((Date.now() - formViewTimes[VARIANT_TEST]) / 1000)
+              : null;
+            const totalTimeOnPage = Math.round(
+              (Date.now() - pageLoadTime) / 1000
+            );
+
+            trackEvent("newsletter_form_submitted", {
+              form_id: "new",
+              variant: VARIANT_TEST,
+              conversion: true,
+              time_to_convert_seconds: timeToConvert,
+              total_time_on_page_seconds: totalTimeOnPage,
+            });
+
+            // Also track time on page when they convert
+            trackTimeOnPage(VARIANT_TEST, "form_submit");
+          });
+        }
+
+        // Initialize A/B test
+        initABTest();
+      });
+
+      // Initialize A/B test when DOM is ready
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initABTest);
+      } else {
+        initABTest();
+      }
+    </script>
+  </body>
 </html>
