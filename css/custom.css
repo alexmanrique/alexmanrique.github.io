@@ -491,10 +491,16 @@ input[type="submit"].newsletter-button:active,
     flex-direction: column;
   }
 
+  #mc_embed_signup_scroll {
+    flex-direction: column !important;
+    border-radius: 8px !important;
+  }
+
   .newsletter-input {
-    border-right: none;
-    border-bottom: 1px solid #e0e0e0;
-    border-radius: 8px 8px 0 0;
+    border-right: none !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    border-radius: 8px 8px 0 0 !important;
+    width: 100% !important;
   }
 
   .newsletter-button,
@@ -502,6 +508,12 @@ input[type="submit"].newsletter-button:active,
   #mc_embed_signup_scroll input[type="submit"],
   #mc-embedded-subscribe {
     width: 100% !important;
+    min-width: 100% !important;
     border-radius: 0 0 8px 8px !important;
+    padding: 14px 20px !important;
+    font-size: 16px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
   }
 }
